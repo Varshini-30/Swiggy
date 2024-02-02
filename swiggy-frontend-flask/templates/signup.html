@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #form {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        border: #c1c1c1 solid 2px;
+      }
+
+      label {
+        font-size: 1rem;
+        color: #5f5e5d;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      #submit {
+        background-color: #4caf50;
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 120px;
+        margin-top: 20px;
+        margin-bottom: 20%;
+        padding: 0.3em.2em;
+        transition: all ease-in-out 0.2s;
+      }
+      #img {
+        padding-left: 30%;
+        padding-bottom: 10%;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <form action="/" method="post">
+        <img
+          src="https://th.bing.com/th/id/OIP.F_k8vvn1zBnhNzr0C87_bgHaCK?w=343&h=101&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+          alt="swiggy"
+          width="50%"
+          id="img"
+          class="text-center"
+          style="padding-right: 20px; padding-left: 30px"
+        />
+        <br />
+        <label name="username">username:-</label>
+        <input
+          type="text"
+          class="username"
+          name="username"
+          placeholder="username"
+        />
+        <br />
+        <br />
+        <label name="phone">phone no:-</label>
+        <input type="tel" class="phone" name="phone" placeholder="phone" />
+        <br />
+        <br />
+        <label name="email">Email address:</label>
+        <input
+          type="email"
+          class="email"
+          name="email"
+          placeholder="Enter email"
+        /><br /><br />
+        <label name="location">location:</label>
+        <input
+          type="text"
+          class="location"
+          name="location"
+          placeholder="Enter location"
+        /><br /><br />
+        <label name="pin">pincode:-</label>
+        <input
+          type="pincode"
+          class="pin"
+          name="pin"
+          placeholder="Enter pincode"
+        /><br /><br />
+        <label name="password">password:</label>
+        <input
+          type="password"
+          class="password"
+          name="password"
+          placeholder="Enter password"
+        /><br /><br />
+
+        <tr>
+          <td><input href="/main" type="submit" value="submit" /></td>
+        </tr>
+      </form>
+    </div>
+      {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+  </body>
+</html>

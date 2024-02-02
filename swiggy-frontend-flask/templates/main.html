@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Swiggy</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center"
+    >
+      <div
+        class="container-fluid d-flex justify-content-center"
+        style="color: white"
+      >
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26jdwsdfZqegFpf97ZokOIZDcwCy5oYO5TA&usqp=CAU"
+          alt="swiggy"
+          class="logo"
+          width="50"
+          height="50"
+          style="mix-blend-mode: multiply"
+        />
+        <h2 style="color: rgb(234, 123, 38)">Swiggy</h2>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex justify-content-around"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-around" href="/location"
+                >Location</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Items
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="/india">Indian</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/chaines">Chanies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/italin">Italin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex py-lg-2">
+            <input
+              class="form-control me-lg-3 d-flex justify-content-center"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success d-flex justify-content-center"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide pb-5"
+        data-bs-ride="carousel"
+        style="background-color: gainsboro"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active text-center px-5 pt-5"
+            data-bs-interval="10000"
+          >
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/3631d2b30f07621486a678478998929f"
+              class="w-50 h-25"
+              alt="..."
+            />
+          </div>
+          <div
+            class="carousel-item text-center px-5 pt-5"
+            data-bs-interval="2000"
+          >
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/5a27c59978069fbf5258be32f81ee681"
+              class="w-50 h-25"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item text-center px-5 pt-5">
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/975bf1fc706d6909c960d135b7eb81f6"
+              class="w-50 h-25"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item text-center px-5 pt-5">
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/1fd881af04f881b20fca30dc50d038ad"
+              class="w-50 h-25"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item text-center px-5 pt-5">
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/e5cfcbee888e5694a229bc4d34a26a17"
+              class="w-50 h-25"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="p-5">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://www.nestleprofessional.in/sites/default/files/2022-07/Fried-Rice.jpg"
+                alt="fried rice"
+                width="150"
+                height="100"
+                class="rounded"
+              />
+              <a href="/friedrice">
+                <h6 class="text-center card-title pt-2">Fried rice</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXiDREYhOVTYBuj9WJGGda7hue1iDRdWXWWQ&usqp=CAU"
+                alt="Noodles"
+                width="150"
+                height="100"
+                class="mix-blend-mode: multiply align-content-center"
+              />
+              <a href="/noodles">
+                <h6 class="card-title text-center pt-2">Noodles</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800"
+                alt="French fries"
+                width="150"
+                height="100"
+                class="mix-blend-mode: multiply align-content-center"
+              />
+              <a href="/frenchfries">
+                <h5 class="card-title text-center pt-2">French Fries</h5></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sT26_BWoXpD4eYMA0PjxLTb5bOhCkyt1Gw&usqp=CAU"
+                alt=""
+                width="150"
+                height="100"
+                class="mix-blend-mode: multiply align-content-center"
+              />
+              <a href="/pizza">
+                <h5 class="card-title text-center pt-2">Pizza</h5></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbW2vTLqFKoIzBf7ttQLlZKHfxd4lmNMAm9A&usqp=CAU"
+                alt=""
+                width="150"
+                height="100"
+                class="mix-blend-mode: multiply align-content-center"
+              />
+              <a href="/momos">
+                <h5 class="card-title text-center pt-2">Momos</h5></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuXlOTtI2ahZmjl1G1uHSM3x9LOB5amVv9A&usqp=CAU"
+                alt=""
+                width="150"
+                height="100"
+                class="mix-blend-mode: multiply align-content-center"
+              />
+              <a href="/burger">
+                <h5 class="card-title text-center pt-2">Burger</h5></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
